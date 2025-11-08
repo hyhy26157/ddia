@@ -1,0 +1,10 @@
+{
+  "type":"record","name":"IaqMetric","namespace":"fake.iaq",
+  "fields":[
+    {"name":"device_id","type":"string"},
+    {"name":"ts","type":{"type":"long","logicalType":"timestamp-millis"}},
+    {"name":"co2_ppm","type":"int"},
+    {"name":"pm25","type":"float"},
+    {"name":"temp_c","type":"float"}
+  ]
+}

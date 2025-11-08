@@ -1,0 +1,10 @@
+{
+  "type":"record","name":"FacialAccessEvent","namespace":"fake.fr",
+  "fields":[
+    {"name":"device_id","type":"string"},
+    {"name":"ts","type":{"type":"long","logicalType":"timestamp-millis"}},
+    {"name":"email_enc","type":"string"},
+    {"name":"result","type":{"type":"enum","name":"ResultType","symbols":["ALLOW","DENY"]}},
+    {"name":"door_id","type":"string"}
+  ]
+}

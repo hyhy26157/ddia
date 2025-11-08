@@ -1,0 +1,9 @@
+{
+  "type":"record","name":"BmsMetric","namespace":"fake.bms",
+  "fields":[
+    {"name":"device_id","type":"string"},
+    {"name":"ts","type":{"type":"long","logicalType":"timestamp-millis"}},
+    {"name":"metric","type":{"type":"enum","name":"Metric","symbols":["TEMP","HUM","KW","LUX","WATER"]}},
+    {"name":"value","type":"float"}
+  ]
+}

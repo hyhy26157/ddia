@@ -1,0 +1,10 @@
+{
+  "type":"record","name":"NetLog","namespace":"fake.net",
+  "fields":[
+    {"name":"device_id","type":"string"},
+    {"name":"ts","type":{"type":"long","logicalType":"timestamp-millis"}},
+    {"name":"bytes_in","type":"long"},
+    {"name":"bytes_out","type":"long"},
+    {"name":"status","type":{"type":"enum","name":"NetStatus","symbols":["OK","WARN","ERR"]}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type":"record","name":"OuraEvent","namespace":"fake.oura",
+  "fields":[
+    {"name":"user_id","type":"string"},
+    {"name":"ts","type":{"type":"long","logicalType":"timestamp-millis"}},
+    {"name":"email_enc","type":"string"},
+    {"name":"hr","type":"int"},
+    {"name":"steps","type":"int"},
+    {"name":"hrv_ms", "type":["null","int"], "default": None},
+    {"name":"skin_temp_c","type":["null","float"], "default": None}
+  ]
+}

@@ -1,0 +1,6 @@
+nats-py==2.7.0
+fastavro==1.9.5
+pymongo==4.6.3
+minio==7.2.7
+cryptography==42.0.7
+python-dateutil==2.9.0
